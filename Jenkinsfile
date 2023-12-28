@@ -5,7 +5,7 @@ pipeline {
         TAG='2.387.3-1'
     }
     stages {
-        tage('Build') {
+        stage('Build') {
             steps {
                 sh "docker build --pull -t ${IMAGE}:${TAG} ."
             }
